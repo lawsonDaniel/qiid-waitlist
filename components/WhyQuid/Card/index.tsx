@@ -1,11 +1,19 @@
 import React from 'react'
 import Card from './Card'
 import {CardData} from './data'
+import { CardCover } from './styles'
 
 export default function index() {
   return (
-    <div>
+    <CardCover>
         <Card/>
-    </div>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+    </CardCover>
   )
 }
