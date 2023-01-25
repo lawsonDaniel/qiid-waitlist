@@ -47,6 +47,7 @@ export const AccordionButton = styled.button`
     border:0;
     text-align: start;
     height:80px;
+    
 `
 export const AccordionItems = styled.div`
 border-bottom: 0.4px solid #3A3A53;
@@ -56,8 +57,8 @@ margin:auto;
 export const AccordionText= styled.p`
     font-family: Mulish;
     font-style: normal;
-    font-weight: 300;
-    font-size: 19px;
+    font-weight: 200;
+    font-size: 15px;
     color:#fff;
     letter-spacing: 0.374px;
     @media screen  and (max-width:${breakpoint.md}) {
@@ -66,8 +67,8 @@ export const AccordionText= styled.p`
 `
 export const AccordionSection = styled.div`
 background: #1E1E2E;
-margin-top:20px;
+margin-top:40px;
 padding:20px;
-height:110%;
+height:350px;
 margin-bottom:20px
 `

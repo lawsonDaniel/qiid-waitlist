@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Jumbotron from '../components/Jumbotron'
 import About from '../components/WhyQuid'
 import FAQ from '../components/Faq'
+import Footer from '../components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function Home() {
         <Jumbotron />
         <About />
         <FAQ />
+        <Footer/>
     </>
   )
 }

@@ -42,8 +42,6 @@ export const CardCover = styled.div`
    align-items: center;
    justify-content: center;
      display: grid;
- grid-template-columns: repeat(3, 400px);
-
   @media (min-width: ${breakpoint.lg}) {
     grid-template-columns: repeat(3, 400px);
   }
@@ -57,5 +55,6 @@ export const CardCover = styled.div`
      display:flex;
     flex-wrap: wrap;
   }
+    
     
 `
