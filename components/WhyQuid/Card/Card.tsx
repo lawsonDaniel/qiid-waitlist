@@ -4,7 +4,7 @@ import { Box } from '../styles'
 import { CardBody, CardContainer, CardHeader, CardImg } from './styles'
 
 
-export default function Card() {
+export default function Card({image,firsttext,secondtext,thirdtext}:any) {
   return (
     <CardContainer>
         <img style={{
@@ -13,11 +13,11 @@ export default function Card() {
         <Box style={{
             padding:'20px'
         }}>
-        <CardImg src="./search.png" />
+    <CardImg src={image} />
         <CardHeader><span style={{
             color:'#FBB03B'
-        }}>Wide Results</span> for all products</CardHeader>
-        <CardBody>Thousands of products available to you at a click</CardBody>
+        }}>{firsttext}</span> {secondtext}</CardHeader>
+        <CardBody>{thirdtext}</CardBody>
         </Box>
     </CardContainer>
   )

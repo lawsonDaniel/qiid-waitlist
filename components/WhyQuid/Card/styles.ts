@@ -36,14 +36,26 @@ export const CardBody = styled.p`
 `
 
 export const CardCover = styled.div`
-    display: flex;
-   flex-wrap: wrap;
-    /* gap: 10px; */
-    /* width: 35%; */
+ 
     gap:20px;
-    grid-template-rows: repeat(4,450px);
     padding:40px;
    align-items: center;
    justify-content: center;
+     display: grid;
+ grid-template-columns: repeat(3, 400px);
+
+  @media (min-width: ${breakpoint.lg}) {
+    grid-template-columns: repeat(3, 400px);
+  }
+
+  @media (min-width: ${breakpoint.md}) and (max-width: ${breakpoint.lg}) {
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: ${breakpoint.sm}) and (max-width: ${breakpoint.md}) {
+     display:flex;
+    flex-wrap: wrap;
+  }
     
 `
